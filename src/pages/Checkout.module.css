@@ -1,0 +1,56 @@
+.page { max-width: 1400px; margin: 0 auto; padding: 0.75rem 1rem; }
+.layout { display: grid; grid-template-columns: 1fr 340px; gap: 0.75rem; align-items: start; }
+.main { display: flex; flex-direction: column; gap: 0; }
+.stepCard { background: #fff; border: 1px solid var(--border); border-top: none; }
+.stepCard:first-child { border-top: 1px solid var(--border); }
+.stepCard.active { border: 2px solid var(--blue); }
+.stepHead { display: flex; align-items: center; gap: 0.75rem; padding: 1rem 1.25rem; }
+.stepNum { width: 24px; height: 24px; border-radius: 50%; background: var(--gray2); color: #fff; font-size: 0.72rem; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.done { background: var(--blue) !important; }
+.current { background: var(--blue) !important; }
+.stepHead span { font-size: 0.82rem; font-weight: 700; color: var(--dark); letter-spacing: 0.06em; }
+.stepInfo { font-size: 0.78rem; color: var(--gray2); font-weight: 400; letter-spacing: 0; margin-left: 0.5rem; }
+.stepBody { padding: 0 1.25rem 1.25rem; border-top: 1px solid var(--border); padding-top: 1.25rem; }
+.addrTypes { display: flex; gap: 0.5rem; margin-bottom: 1rem; }
+.typeBtn { border: 1px solid var(--border); background: none; padding: 0.4rem 1rem; border-radius: var(--radius); font-size: 0.8rem; font-weight: 600; cursor: pointer; font-family: var(--sans); transition: all 0.15s; }
+.typeActive { border-color: var(--blue); color: var(--blue); background: var(--blue3); }
+.formGrid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; margin-bottom: 1rem; }
+.fld { display: flex; flex-direction: column; gap: 0.3rem; }
+.fld label { font-size: 0.72rem; font-weight: 700; color: var(--gray2); text-transform: uppercase; letter-spacing: 0.04em; }
+.fld input { border: 1px solid var(--border); border-radius: var(--radius); padding: 0.6rem 0.75rem; font-size: 0.85rem; font-family: var(--sans); outline: none; transition: border-color 0.2s; }
+.fld input:focus { border-color: var(--blue); }
+.nextBtn { background: var(--orange); color: #fff; border: none; padding: 0.75rem 2.5rem; font-size: 0.85rem; font-weight: 700; cursor: pointer; border-radius: var(--radius); letter-spacing: 0.05em; font-family: var(--sans); }
+.nextBtn:hover { background: #e05500; }
+.payLayout { display: grid; grid-template-columns: 200px 1fr; gap: 0; border: 1px solid var(--border); }
+.payMethods { border-right: 1px solid var(--border); display: flex; flex-direction: column; }
+.payMethod { display: flex; align-items: center; gap: 0.65rem; padding: 0.85rem 1rem; background: none; border: none; border-bottom: 1px solid var(--border); font-size: 0.82rem; font-weight: 500; cursor: pointer; text-align: left; font-family: var(--sans); color: var(--dark); transition: background 0.15s; }
+.payMethod span:first-child { font-size: 1.1rem; }
+.payMethod:hover { background: var(--blue3); }
+.payActive { background: var(--blue3) !important; color: var(--blue) !important; font-weight: 700 !important; border-left: 3px solid var(--blue); }
+.payDetail { padding: 1.25rem; }
+.payForm h4 { font-size: 0.88rem; font-weight: 700; margin-bottom: 0.85rem; color: var(--dark); }
+.payForm p { font-size: 0.85rem; color: var(--gray); margin-bottom: 1rem; }
+.payForm input { width: 100%; border: 1px solid var(--border); border-radius: var(--radius); padding: 0.6rem 0.75rem; font-size: 0.85rem; font-family: var(--sans); outline: none; margin-bottom: 0.65rem; transition: border-color 0.2s; }
+.payForm input:focus { border-color: var(--blue); }
+.cardRow { display: grid; grid-template-columns: 1fr 1fr; gap: 0.65rem; }
+.upiApps { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 0.5rem; }
+.upiApp { background: var(--blue3); color: var(--blue); font-size: 0.72rem; font-weight: 700; padding: 0.3rem 0.75rem; border-radius: var(--radius); cursor: pointer; }
+.bankGrid { display: grid; grid-template-columns: repeat(3,1fr); gap: 0.5rem; margin-bottom: 1rem; }
+.bankBtn { border: 1px solid var(--border); background: none; padding: 0.5rem; border-radius: var(--radius); font-size: 0.78rem; font-weight: 700; cursor: pointer; font-family: var(--sans); transition: all 0.15s; }
+.bankBtn:hover { border-color: var(--blue); color: var(--blue); background: var(--blue3); }
+.emiRow { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem; font-size: 0.85rem; }
+.placeBtn { background: var(--orange); color: #fff; border: none; padding: 0.8rem 2rem; font-size: 0.9rem; font-weight: 700; cursor: pointer; border-radius: var(--radius); letter-spacing: 0.05em; font-family: var(--sans); margin-top: 1rem; width: 100%; transition: background 0.2s; }
+.placeBtn:hover { background: #e05500; }
+.placeBtn:disabled { opacity: 0.7; cursor: not-allowed; }
+.summary {}
+.summaryCard { background: #fff; border: 1px solid var(--border); padding: 1.25rem; }
+.summaryCard h3 { font-size: 0.78rem; font-weight: 700; color: var(--gray2); letter-spacing: 0.1em; margin-bottom: 1rem; padding-bottom: 0.75rem; border-bottom: 1px solid var(--border); }
+.sumRows { display: flex; flex-direction: column; gap: 0.65rem; }
+.sumRow { display: flex; justify-content: space-between; font-size: 0.88rem; }
+.green { color: var(--green) !important; }
+.sumTotal { display: flex; justify-content: space-between; font-size: 0.95rem; font-weight: 700; border-top: 1px solid var(--border); padding-top: 0.75rem; margin-top: 0.5rem; }
+.saveMsg { font-size: 0.78rem; color: var(--green); font-weight: 600; background: var(--green2); padding: 0.5rem; text-align: center; margin-top: 0.75rem; border-radius: var(--radius); }
+.safeCard { background: #fff; border: 1px solid var(--border); border-top: none; padding: 0.85rem; display: flex; align-items: center; gap: 0.5rem; font-size: 0.72rem; color: var(--gray); }
+.empty { text-align: center; padding: 4rem; background: #fff; max-width: 400px; margin: 2rem auto; border: 1px solid var(--border); }
+.shopBtn { display: inline-block; background: var(--blue); color: #fff; padding: 0.7rem 1.5rem; border-radius: var(--radius); font-weight: 700; text-decoration: none; margin-top: 1rem; }
+@media(max-width:900px) { .layout { grid-template-columns: 1fr; } .payLayout { grid-template-columns: 1fr; } .payMethods { flex-direction: row; overflow-x: auto; border-right: none; border-bottom: 1px solid var(--border); } .formGrid { grid-template-columns: 1fr; } }

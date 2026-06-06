@@ -1,0 +1,42 @@
+.page { min-height: 100vh; }
+.heroSection { display: grid; grid-template-columns: 1fr 280px; gap: 0; max-width: 1400px; margin: 0 auto; }
+.bannerWrap { position: relative; overflow: hidden; min-height: 280px; }
+.banner { position: absolute; inset: 0; display: flex; align-items: center; padding: 3rem; opacity: 0; transition: opacity 0.5s; pointer-events: none; }
+.bannerActive { opacity: 1; pointer-events: all; }
+.bannerContent { color: #fff; }
+.bannerEmoji { font-size: 3rem; display: block; margin-bottom: 0.75rem; }
+.bannerContent h1 { font-family: var(--display); font-size: clamp(1.8rem, 3.5vw, 3rem); font-weight: 800; margin-bottom: 0.5rem; line-height: 1.1; }
+.bannerContent p { font-size: 1rem; opacity: 0.9; margin-bottom: 1.25rem; }
+.bannerCta { background: #fff; color: var(--blue2); padding: 0.6rem 1.5rem; border-radius: var(--radius); font-weight: 700; font-size: 0.88rem; display: inline-block; transition: transform 0.2s; }
+.bannerCta:hover { transform: translateY(-2px); }
+.bannerDots { position: absolute; bottom: 1rem; left: 50%; transform: translateX(-50%); display: flex; gap: 6px; }
+.dot { width: 8px; height: 8px; border-radius: 50%; background: rgba(255,255,255,0.4); border: none; cursor: pointer; transition: background 0.2s; padding: 0; }
+.dotActive { background: #fff; }
+.offerCards { display: flex; flex-direction: column; }
+.offerCard { flex: 1; display: flex; align-items: center; gap: 0.75rem; padding: 1rem 1.25rem; color: #fff; text-decoration: none; transition: opacity 0.2s; }
+.offerCard:hover { opacity: 0.9; }
+.offerEmoji { font-size: 1.8rem; flex-shrink: 0; }
+.offerCard strong { display: block; font-size: 0.88rem; font-weight: 700; }
+.offerCard span { font-size: 0.72rem; opacity: 0.85; }
+.catSection { background: #fff; padding: 1.25rem 1.5rem; max-width: 1400px; margin: 0.75rem auto 0; border: 1px solid var(--border); }
+.catSection h2 { font-size: 1rem; font-weight: 700; margin-bottom: 1rem; color: var(--dark); }
+.catGrid { display: grid; grid-template-columns: repeat(10, 1fr); gap: 0.5rem; }
+.catItem { display: flex; flex-direction: column; align-items: center; gap: 0.35rem; padding: 0.85rem 0.5rem; border-radius: var(--radius2); text-decoration: none; transition: transform 0.15s; }
+.catItem:hover { transform: translateY(-2px); }
+.catEmoji { font-size: 1.6rem; }
+.catName { font-size: 0.68rem; font-weight: 600; color: var(--dark); text-align: center; line-height: 1.2; }
+.section { background: #fff; max-width: 1400px; margin: 0.75rem auto 0; border: 1px solid var(--border); padding: 1.25rem 1.5rem; }
+.sectionHead { display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem; border-bottom: 1px solid var(--border); padding-bottom: 0.75rem; }
+.sectionHead h2 { font-size: 1.05rem; font-weight: 700; }
+.viewAll { font-size: 0.82rem; color: var(--blue); font-weight: 600; text-decoration: none; }
+.viewAll:hover { text-decoration: underline; }
+.productGrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(165px, 1fr)); gap: 0; border: 1px solid var(--border); }
+.productGrid > * { border-right: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+.promoStrip { display: flex; background: var(--blue); max-width: 1400px; margin: 0.75rem auto 0; padding: 1rem 1.5rem; gap: 0; }
+.promoItem { flex: 1; display: flex; align-items: center; gap: 0.65rem; padding: 0.5rem 1rem; border-right: 1px solid rgba(255,255,255,0.15); color: #fff; }
+.promoItem:last-child { border-right: none; }
+.promoItem span { font-size: 1.5rem; flex-shrink: 0; }
+.promoItem strong { font-size: 0.8rem; font-weight: 700; display: block; }
+.promoItem p { font-size: 0.7rem; opacity: 0.8; margin: 0; }
+@media(max-width:1024px) { .heroSection { grid-template-columns: 1fr; } .offerCards { flex-direction: row; } .offerCard { flex: 1; } .catGrid { grid-template-columns: repeat(5,1fr); } .promoStrip { flex-wrap: wrap; } }
+@media(max-width:640px) { .heroSection { grid-template-columns: 1fr; } .offerCards { display: none; } .catGrid { grid-template-columns: repeat(4,1fr); } .productGrid { grid-template-columns: repeat(2,1fr); } .promoStrip { display: none; } }

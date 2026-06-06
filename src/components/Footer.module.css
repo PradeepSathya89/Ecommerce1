@@ -1,0 +1,13 @@
+.footer { background: #172337; color: rgba(255,255,255,0.7); margin-top: 1rem; }
+.top { display: grid; grid-template-columns: repeat(5,1fr); gap: 2rem; padding: 2rem 3rem; max-width: 1400px; margin: 0 auto; border-bottom: 1px solid rgba(255,255,255,0.1); }
+.col h4 { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em; color: rgba(255,255,255,0.5); margin-bottom: 0.85rem; }
+.col a { display: block; font-size: 0.8rem; color: rgba(255,255,255,0.7); text-decoration: none; margin-bottom: 0.45rem; transition: color 0.15s; }
+.col a:hover { color: #fff; }
+.bottom { display: flex; align-items: center; justify-content: space-between; padding: 1rem 3rem; max-width: 1400px; margin: 0 auto; flex-wrap: wrap; gap: 1rem; }
+.bottomLeft { display: flex; align-items: center; gap: 0.75rem; font-size: 0.78rem; flex-wrap: wrap; }
+.logoText { font-family: var(--display); font-size: 1rem; font-weight: 800; color: #fff; }
+.bottomLeft a { color: rgba(255,255,255,0.6); text-decoration: none; font-size: 0.75rem; }
+.bottomLeft a:hover { color: #fff; }
+.bottomRight { display: flex; align-items: center; gap: 1rem; font-size: 0.8rem; }
+@media(max-width:1024px) { .top { grid-template-columns: repeat(3,1fr); } }
+@media(max-width:640px) { .top { grid-template-columns: repeat(2,1fr); padding: 1.5rem; } .bottom { padding: 1rem 1.5rem; flex-direction: column; text-align: center; } }

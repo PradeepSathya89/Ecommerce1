@@ -1,0 +1,32 @@
+.page { max-width: 1000px; margin: 0 auto; padding: 1rem; }
+.page h1 { font-size: 1rem; font-weight: 700; margin-bottom: 0.75rem; padding: 0.75rem 1.25rem; background: #fff; border: 1px solid var(--border); }
+.orders { display: flex; flex-direction: column; gap: 0.75rem; }
+.order { background: #fff; border: 1px solid var(--border); overflow: hidden; }
+.orderTop { display: flex; align-items: center; gap: 1.5rem; padding: 0.85rem 1.25rem; background: var(--gray3); border-bottom: 1px solid var(--border); flex-wrap: wrap; }
+.orderId { font-size: 0.78rem; font-weight: 700; font-family: monospace; color: var(--blue); }
+.orderDate, .orderPay { font-size: 0.78rem; color: var(--gray2); }
+.orderTotal { font-size: 0.88rem; font-weight: 700; margin-left: auto; }
+.tracker { display: flex; align-items: flex-start; padding: 1.25rem; overflow-x: auto; background: #fff; border-bottom: 1px solid var(--border); }
+.tStep { display: flex; flex-direction: column; align-items: center; gap: 0.3rem; min-width: 90px; position: relative; }
+.tDot { width: 14px; height: 14px; border-radius: 50%; background: var(--border); border: 2px solid var(--border); z-index: 1; flex-shrink: 0; }
+.tDone .tDot { background: var(--green); border-color: var(--green); }
+.tLine { position: absolute; top: 6px; left: 50%; width: 100%; height: 2px; background: var(--border); z-index: 0; }
+.tLineDone { background: var(--green); }
+.tStep span { font-size: 0.62rem; font-weight: 600; color: var(--gray2); text-align: center; line-height: 1.2; }
+.tDone span { color: var(--green); }
+.items { display: flex; flex-direction: column; }
+.item { display: flex; align-items: center; gap: 1rem; padding: 0.75rem 1.25rem; border-bottom: 1px solid var(--border); }
+.item:last-child { border-bottom: none; }
+.itemEmoji { font-size: 2rem; flex-shrink: 0; width: 48px; height: 48px; background: var(--gray3); display: flex; align-items: center; justify-content: center; border-radius: var(--radius); }
+.itemInfo { flex: 1; }
+.itemName { font-size: 0.85rem; font-weight: 500; }
+.itemMeta { font-size: 0.75rem; color: var(--gray2); }
+.itemPrice { font-size: 0.88rem; font-weight: 700; }
+.orderFooter { display: flex; align-items: center; justify-content: space-between; padding: 0.75rem 1.25rem; background: var(--gray3); flex-wrap: wrap; gap: 0.5rem; }
+.statusBadge { font-size: 0.72rem; font-weight: 700; padding: 0.25rem 0.65rem; border-radius: var(--radius); text-transform: uppercase; letter-spacing: 0.05em; }
+.addr { font-size: 0.75rem; color: var(--gray2); }
+.empty { display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 50vh; gap: 1rem; text-align: center; background: #fff; max-width: 360px; margin: 2rem auto; padding: 3rem; border: 1px solid var(--border); }
+.empty span { font-size: 3.5rem; }
+.empty h2 { font-size: 1.1rem; font-weight: 700; }
+.empty p { font-size: 0.85rem; color: var(--gray2); }
+.btn { background: var(--blue); color: #fff; padding: 0.65rem 1.75rem; border-radius: var(--radius); font-weight: 700; text-decoration: none; font-size: 0.85rem; }

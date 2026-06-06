@@ -1,0 +1,10 @@
+.page { max-width: 1400px; margin: 0 auto; padding: 0.75rem 1rem; }
+.header { background: #fff; border: 1px solid var(--border); padding: 1rem 1.25rem; margin-bottom: 0.5rem; }
+.header h2 { font-size: 1rem; font-weight: 500; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(175px,1fr)); gap: 0; border: 1px solid var(--border); background: #fff; }
+.grid > * { border-right: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+.empty { display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 60vh; gap: 1rem; text-align: center; background: #fff; max-width: 400px; margin: 2rem auto; padding: 3rem; border: 1px solid var(--border); }
+.empty span { font-size: 4rem; color: #ccc; }
+.empty h2 { font-size: 1.2rem; font-weight: 700; }
+.empty p { color: var(--gray2); font-size: 0.88rem; }
+.btn { background: var(--blue); color: #fff; padding: 0.7rem 1.75rem; border-radius: var(--radius); font-weight: 700; text-decoration: none; font-size: 0.88rem; }

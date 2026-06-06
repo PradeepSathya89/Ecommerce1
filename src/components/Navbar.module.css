@@ -1,0 +1,44 @@
+.header { position: sticky; top: 0; z-index: 300; background: var(--blue); box-shadow: 0 2px 8px rgba(0,0,0,0.2); }
+.nav { display: flex; align-items: center; gap: 1rem; padding: 0.65rem 1.5rem; max-width: 1400px; margin: 0 auto; }
+.logo { display: flex; flex-direction: column; text-decoration: none; flex-shrink: 0; min-width: 100px; }
+.logoText { font-family: var(--display); font-size: 1.3rem; font-weight: 800; color: #fff; letter-spacing: -0.5px; line-height: 1; }
+.logoSub { font-size: 0.65rem; color: #ffe082; font-style: italic; font-weight: 500; }
+.logoSub em { color: #fff; font-style: italic; }
+.searchForm { flex: 1; display: flex; max-width: 680px; border-radius: var(--radius2); overflow: hidden; background: #fff; }
+.searchInput { flex: 1; border: none; padding: 0.6rem 1rem; font-size: 0.88rem; outline: none; color: var(--dark); font-family: var(--sans); }
+.searchBtn { background: var(--blue); color: #fff; border: none; padding: 0 1.1rem; cursor: pointer; display: flex; align-items: center; transition: background 0.2s; }
+.searchBtn:hover { background: var(--blue2); }
+.actions { display: flex; align-items: center; gap: 0.25rem; margin-left: auto; }
+.loginBtn { background: #fff; color: var(--blue); border: none; padding: 0.4rem 1.25rem; border-radius: var(--radius); font-size: 0.88rem; font-weight: 700; cursor: pointer; font-family: var(--sans); text-decoration: none; display: flex; align-items: center; white-space: nowrap; transition: background 0.15s; }
+.loginBtn:hover { background: #e8f0fe; }
+.navBtn { background: transparent; border: none; color: #fff; padding: 0.4rem 0.65rem; font-size: 0.82rem; font-weight: 500; cursor: pointer; display: flex; align-items: center; gap: 0.25rem; border-radius: var(--radius); transition: background 0.15s; font-family: var(--sans); }
+.navBtn:hover { background: rgba(255,255,255,0.15); }
+.navBtnIcon { font-size: 1rem; }
+.arrow { font-size: 0.6rem; opacity: 0.8; }
+.navItem { position: relative; }
+.userMenu { position: relative; }
+.dropdown { display: none; position: absolute; top: calc(100% + 4px); right: 0; background: #fff; border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow2); min-width: 170px; z-index: 400; animation: slideDown 0.15s ease; }
+.userMenu:hover .dropdown { display: block; }
+.dropHeader { font-size: 0.72rem; font-weight: 700; color: var(--gray2); padding: 0.6rem 1rem; text-transform: uppercase; letter-spacing: 0.08em; border-bottom: 1px solid var(--border); }
+.dropdown a, .dropdown button { display: block; width: 100%; padding: 0.6rem 1rem; font-size: 0.85rem; color: var(--dark); background: none; border: none; text-align: left; cursor: pointer; font-family: var(--sans); font-weight: 500; text-decoration: none; transition: background 0.15s; }
+.dropdown a:hover, .dropdown button:hover { background: var(--blue3); color: var(--blue); }
+.dropDivider { height: 1px; background: var(--border); margin: 0.25rem 0; }
+.cartBtn { display: flex; align-items: center; gap: 0.4rem; color: #fff; text-decoration: none; padding: 0.4rem 0.75rem; border-radius: var(--radius); font-size: 0.88rem; font-weight: 700; position: relative; transition: background 0.15s; }
+.cartBtn:hover { background: rgba(255,255,255,0.15); }
+.cartBtn svg { flex-shrink: 0; }
+.cartBadge { position: absolute; top: -2px; left: 22px; background: var(--orange); color: #fff; width: 16px; height: 16px; border-radius: 50%; font-size: 0.6rem; font-weight: 800; display: flex; align-items: center; justify-content: center; }
+.adminBtn { background: rgba(255,255,255,0.2); color: #fff; border: 1px solid rgba(255,255,255,0.4); padding: 0.35rem 0.85rem; border-radius: var(--radius); font-size: 0.75rem; font-weight: 700; text-decoration: none; transition: background 0.15s; white-space: nowrap; font-family: var(--sans); }
+.adminBtn:hover { background: rgba(255,255,255,0.3); }
+.catBar { background: var(--blue2); display: flex; overflow-x: auto; scrollbar-width: none; max-width: 1400px; margin: 0 auto; }
+.catBar::-webkit-scrollbar { display: none; }
+.catLink { white-space: nowrap; padding: 0.5rem 1.1rem; font-size: 0.8rem; font-weight: 500; color: rgba(255,255,255,0.85); text-decoration: none; transition: color 0.15s; border-bottom: 2px solid transparent; }
+.catLink:hover { color: #fff; border-bottom-color: #fff; }
+.menuBtn { display: none; background: none; border: none; color: #fff; font-size: 1.5rem; padding: 0.2rem; cursor: pointer; }
+.mobileMenu { background: var(--blue2); padding: 1rem; display: flex; flex-direction: column; gap: 0.25rem; }
+.mobileSearch { display: flex; gap: 0.5rem; margin-bottom: 0.75rem; }
+.mobileSearch input { flex:1; border:none; border-radius: var(--radius); padding: 0.6rem 0.85rem; font-size: 0.9rem; font-family: var(--sans); outline: none; }
+.mobileSearch button { background: var(--orange); color: #fff; border: none; border-radius: var(--radius); padding: 0.6rem 1rem; font-weight: 700; cursor: pointer; font-family: var(--sans); }
+.mobileMenu a, .mobileMenu button { color: rgba(255,255,255,0.85); padding: 0.5rem 0.25rem; font-size: 0.88rem; border-bottom: 1px solid rgba(255,255,255,0.1); text-decoration: none; background: none; text-align: left; font-family: var(--sans); cursor: pointer; }
+.mobileMenu a:hover { color: #fff; }
+@media(max-width:900px) { .searchForm { max-width: 300px; } .actions .navItem, .adminBtn { display: none; } }
+@media(max-width:640px) { .nav { padding: 0.65rem 1rem; } .searchForm { display: none; } .menuBtn { display: block; } .catBar { display: none; } }
